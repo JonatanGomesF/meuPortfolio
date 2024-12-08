@@ -1,0 +1,151 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  max-width: 800px; 
+  width: 100%;
+  margin: auto; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Título principal */
+.skillsTitle {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center; 
+}
+
+/* Lista de skills */
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%; 
+}
+
+/* Cada item de skill */
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Nome da skill */
+.skillLabel {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Barra de fundo */
+.skillBar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 12px;
+}
+
+/* Barra de preenchimento */
+.skillLevel {
+  height: 100%;
+  background: linear-gradient(90deg, #ff5757, #ff9a57);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  animation: fillBar 2s ease-in-out forwards;
+}
+
+/* Animação para preencher a barra */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Texto de porcentagem */
+.skillPercentage {
+  position: absolute;
+  right: 10px;
+  white-space: nowrap;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .skillsContainer {
+    width: 220px;
+    margin-left: 5px;
+    
+  }
+
+  .skillsTitle {
+    font-size: 28px; 
+  }
+
+  .skillLabel {
+    font-size: 16px; 
+  }
+
+  .skillBar {
+    height: 10px; 
+  }
+
+  .skillLevel {
+    font-size: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+
+  .skillsContainer {
+    width: 220px;
+    margin-left: 20px;
+    
+  }
+
+  .skillsTitle {
+    font-size: 20px; 
+  }
+
+  .skillsList {
+    gap: 15px;
+  }
+
+  .skillLabel {
+    font-size: 14px; 
+  }
+
+  .skillBar {
+    height: 10px;
+  }
+
+  .skillLevel {
+    font-size: 16px; 
+  }
+
+  .skillPercentage {
+    left: 10px; 
+  color: black;
+  }
+}

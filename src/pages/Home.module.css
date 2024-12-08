@@ -1,0 +1,210 @@
+/* Estilo do contêiner de informações */
+.infoContainer {
+  margin: 0 auto; /* Centraliza o contêiner */
+  white-space: normal; /* Permite a quebra de linha no texto */
+  word-wrap: break-word; /* Quebra palavras longas para que o texto não ultrapasse o limite */
+  padding: 10px; /* Para não colar o texto nas bordas */
+  
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do contêiner */
+}
+
+/* Estilo para as animações de digitação */
+.typing-effect1, .typing-effect2, .typing-effect4, .typing-effect5, .typing-effect6, .typing-effect7, .typing-effect8, .typing-effect10, .typing-effect11, .typing-effect12, .typing-effect13 {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace; /* Fonte de máquina de escrever */
+  overflow: hidden; /* Esconde o texto extra */
+  white-space: nowrap; /* Garante que o texto fique em uma linha */
+  border-right: 3px solid #333; /* Cursor piscando */
+  width: 0;
+  animation: typing 2s steps(30) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Delay para cada novo texto */
+.typing-effect1 {
+  animation-delay: 0s; /* O h1 começa primeiro */
+}
+
+.typing-effect2 {
+  animation-delay: 1.5s; /* O h2 começa após o h1 terminar (3.5s) */
+}
+
+
+.typing-effect4 {
+  animation-delay: 4s; /* O parágrafo 1 começa após o h3 */
+}
+
+.typing-effect5 {
+  animation-delay: 5.5s; /* O parágrafo 2 começa após o parágrafo 1 */
+}
+
+.typing-effect6 {
+  animation-delay: 7s; /* O parágrafo 3 começa após o parágrafo 2 */
+}
+
+.typing-effect7 {
+  animation-delay: 8.5s; /* O parágrafo 4 começa após o parágrafo 3 */
+}
+
+.typing-effect8 {
+  animation-delay: 10s; /* O parágrafo 5 começa após o parágrafo 4 */
+}
+
+
+.typing-effect10 {
+  animation-delay: 13s; /* O parágrafo 7 começa após o parágrafo 6 */
+  text-align: center;
+}
+
+.typing-effect11 {
+  animation-delay: 14.5s; /* O parágrafo 8 começa após o parágrafo 7 */
+  text-align: center;
+}
+
+.typing-effect12 {
+  animation-delay: 16s; /* O parágrafo 9 começa após o parágrafo 8 */
+  text-align: center;
+}
+
+.typing-effect13 {
+  animation-delay: 17.5s; /* O parágrafo 10 começa após o parágrafo 9 */
+  text-align: center;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Estilo da imagem de perfil */
+.ProfileImg {
+  max-width: 30%; /* Tamanho inicial */
+  border-radius: 50%; /* Imagem circular */
+  transform: scale(0.8); /* Levemente reduzida inicialmente */
+  opacity: 0; /* Invisível inicialmente */
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out; /* Transição suave */
+}
+
+/* Efeito quando a imagem de perfil aparece */
+.ProfileImg.show {
+  transform: scale(1); /* Tamanho final */
+  opacity: 1; /* Totalmente visível */
+}
+
+/* Container da imagem de perfil */
+.profilePicture {
+  margin-top: 80px;
+}
+
+/* Efeito especial para typing-effect3 */
+.typing-effect3 {
+  font-size: 20px;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fade-in 12s ease-in-out, text-shadow-pulse 1.5s infinite alternate;
+}
+
+/* Efeito especial para typing-effect9 */
+.typing-effect9 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  animation: slide-in 8.5s ease-out, grow 6s infinite alternate;
+  text-align: center;
+}
+
+/* Animações personalizadas */
+
+/* Efeito de fade-in */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de pulsação do texto */
+@keyframes text-shadow-pulse {
+  from {
+    text-shadow: 0 0 5px red, 0 0 10px orange;
+  }
+  to {
+    text-shadow: 0 0 15px orange, 0 0 30px yellow;
+  }
+}
+
+/* Efeito de slide-in */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Efeito de crescimento */
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .infoContainer {
+    padding: 10px;
+    max-width: 100%; /* Adapta o contêiner para a tela pequena */
+
+  }
+
+  .infoContainer{
+    padding: 8px;
+   
+
+    
+  }
+
+  .typing-effect1, .typing-effect2, .typing-effect3, .typing-effect4, .typing-effect5, .typing-effect6, .typing-effect7, .typing-effect8, .typing-effect9, .typing-effect10, .typing-effect11, .typing-effect12, .typing-effect13 {
+    font-size: 8px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    white-space: normal;
+  }
+
+  .ProfileImg {
+    max-width: 30%; /* Ajuste da imagem para telas menores */
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .infoContainer {
+
+    padding: 8px;
+  }
+
+  .typing-effect1, .typing-effect2, .typing-effect3, .typing-effect4, .typing-effect5, .typing-effect6, .typing-effect7, .typing-effect8, .typing-effect9, .typing-effect10, .typing-effect11, .typing-effect12, .typing-effect13 {
+    font-size: 10px; /* Reduz ainda mais o tamanho da fonte em telas muito pequenas */
+  }
+
+}

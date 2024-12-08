@@ -1,0 +1,42 @@
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre os ícones */
+  margin: 20px 0;
+  margin-left: auto; /* Removido o deslocamento fixo */
+  margin-right: auto;
+}
+
+.icon {
+  font-size: 90px;
+  color: #333; /* Cor inicial */
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-align: center;
+  align-items: center;
+}
+
+/* Estilo ao passar o mouse */
+.icon:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  color: #007bff; /* Cor ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .icon {
+      font-size: 60px; /* Reduz tamanho do ícone */
+  }
+  .iconContainer {
+      gap: 10px; /* Reduz o espaçamento entre os ícones */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+      font-size: 50px; /* Mais ajuste para telas pequenas */
+  }
+  .iconContainer {
+      flex-direction: column; /* Alinha os ícones verticalmente */
+      gap: 20px; /* Ajusta o espaçamento para exibição vertical */
+  }
+}
