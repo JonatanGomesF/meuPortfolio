@@ -119,8 +119,9 @@
 @media (max-width: 480px) {
 
   .skillsContainer {
-    width: 220px;
-    margin-left: 20px;
+    margin:auto; 
+    padding: 10px;
+    max-width: 100%; 
     
   }
 

@@ -26,7 +26,7 @@ const Home = () => {
         {/* Imagem de perfil com animação */}
         <div className={styles.profilePicture}>
     <img
-      src="./src/images/fotoPerfil.jpeg"
+      src="/images/fotoPerfil.jpeg"
       alt="Foto de perfil"
       className={`${styles.ProfileImg} ${showProfileImg ? styles.show : ''}`}
     />
@@ -59,7 +59,7 @@ const Home = () => {
       <div className={styles.profilePicture}>
         {showProfileImg && (
           <img
-            src="./src/images/fotoPerfil.jpeg"
+            src="/images/fotoPerfil.jpeg"
             alt="Foto de perfil"
             className={`${styles.ProfileImg} ${styles.fadeInEffect}`}
           />
