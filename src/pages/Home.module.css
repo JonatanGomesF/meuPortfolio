@@ -174,6 +174,7 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .infoContainer {
+    font-size: 40px;
     padding: 10px;
     max-width: 100%; 
 
@@ -187,24 +188,24 @@
   }
 
   .typing-effect1, .typing-effect2, .typing-effect3, .typing-effect4, .typing-effect5, .typing-effect6, .typing-effect7, .typing-effect8, .typing-effect9, .typing-effect10, .typing-effect11, .typing-effect12, .typing-effect13 {
-    font-size: 8px; 
+    font-size: 20px; 
     white-space: normal;
   }
 
   .ProfileImg {
-    max-width: 30%; 
+    max-width: 40%; 
     
   }
 }
 
 @media (max-width: 480px) {
   .infoContainer {
-
+    
     padding: 8px;
   }
 
   .typing-effect1, .typing-effect2, .typing-effect3, .typing-effect4, .typing-effect5, .typing-effect6, .typing-effect7, .typing-effect8, .typing-effect9, .typing-effect10, .typing-effect11, .typing-effect12, .typing-effect13 {
-    font-size: 10px; 
+    font-size: 20px; 
   }
 
 }

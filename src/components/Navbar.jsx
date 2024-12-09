@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <Link to="/" className={styles.navbarLogo}>
-          MeuPortfólio
+          Meu Portfólio
         </Link>
         <button className={styles.hamburger} onClick={toggleMenu}>
           <span className={styles.hamburgerLine}></span>
