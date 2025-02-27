@@ -26,7 +26,7 @@ const Home = () => {
         {/* Imagem de perfil com animação */}
         <div className={styles.profilePicture}>
     <img
-      src="/images/fotoPerfil.jpeg"
+      src="/images/Profile.jpeg"
       alt="Foto de perfil"
       className={`${styles.ProfileImg} ${showProfileImg ? styles.show : ''}`}
     />
